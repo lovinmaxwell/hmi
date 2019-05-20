@@ -1,4 +1,4 @@
-# hmi1
+# HMI 
 
 ## Project setup
 ```
