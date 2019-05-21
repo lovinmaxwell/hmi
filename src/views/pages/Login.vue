@@ -1,5 +1,8 @@
 <template>
-  <div class="app flex-row align-items-center" style="background-color:#5155;">
+  <div class="app flex-row align-items-center" v-bind:style="{ backgroundImage: 'url(img/building.jpg)' }" >
+    <!-- <img
+        src="img/building.jpg"
+        /> -->
     <div class="container">
       <b-row class="justify-content-center">
         <b-col md="8">
