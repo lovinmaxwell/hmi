@@ -26,9 +26,6 @@ export default {
   components: {
     AppHeaderDropdown
   },
-  data: () => {
-    return { itemsCount: 42 }
-  },
   methods: {
     goToLogin() {
       // this.$router.go(-1)
