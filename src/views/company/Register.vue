@@ -1,6 +1,6 @@
 <template>
   <div class="animated fadeIn">
-    <b-row>
+    <!-- <b-row>
       <b-col sm="6" md="4">
         <b-card header="Card title">
           Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
@@ -48,7 +48,7 @@
           Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
         </b-card>
       </b-col>
-    </b-row><!--/.row-->
+    </b-row>
     <b-row>
       <b-col sm="6" md="4">
         <b-card header="Card outline primary" border-variant="primary">
@@ -80,7 +80,7 @@
           Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
         </b-card>
       </b-col>
-    </b-row><!--/.row-->
+    </b-row>
 
     <b-row>
       <b-col sm="6" md="4">
@@ -113,7 +113,7 @@
           Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
         </b-card>
       </b-col>
-    </b-row><!--/.row-->
+    </b-row>
     <b-row>
       <b-col sm="6" md="4">
         <b-card class="bg-primary text-center">
@@ -175,7 +175,7 @@
           </blockquote>
         </b-card>
       </b-col>
-    </b-row><!--/.row-->
+    </b-row>
     <b-row>
       <b-col sm="6" md="4">
         <b-card header="Card title" class="bg-primary">
@@ -227,7 +227,7 @@
           </b-card>
         </transition>
       </b-col>
-    </b-row><!--/.row-->
+    </b-row> -->
   </div>
 </template>
 

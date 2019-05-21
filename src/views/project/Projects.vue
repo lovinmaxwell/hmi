@@ -1,6 +1,6 @@
 <template>
   <div class="animated fadeIn">
-    <b-card no-body>
+    <!-- <b-card no-body>
       <b-card-header>
         <strong>Standard buttons</strong>
       </b-card-header>
@@ -674,7 +674,7 @@
           <b-button size="lg" variant="ghost-info" block>Block level button</b-button>
         </b-card>
       </b-col>
-    </b-row>
+    </b-row> -->
   </div>
 </template>
 

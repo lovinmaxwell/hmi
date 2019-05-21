@@ -1,6 +1,6 @@
 <template>
   <div class="wrapper">
-    <div class="animated fadeIn">
+    <!-- <div class="animated fadeIn">
       <b-row>
         <b-col cols="12">
           <b-card
@@ -18,7 +18,7 @@
           </b-card>
         </b-col>
       </b-row>
-    </div>
+    </div> -->
   </div>
 </template>
 
