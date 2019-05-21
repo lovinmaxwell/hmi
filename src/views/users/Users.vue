@@ -1,6 +1,6 @@
 <template>
   <b-row>
-    <b-col cols="12" xl="6">
+    <b-col cols="12" xl="15">
       <transition name="slide">
       <b-card :header="caption">
         <b-table :hover="hover" :striped="striped" :bordered="bordered" :small="small" :fixed="fixed" responsive="sm" :items="items" :fields="fields" :current-page="currentPage" :per-page="perPage" @row-clicked="rowClicked">
@@ -26,11 +26,11 @@
 <script>
 import usersData from './UsersData'
 export default {
-  name: 'Users',
+  name: 'Employees',
   props: {
     caption: {
       type: String,
-      default: 'Users'
+      default: 'Employees'
     },
     hover: {
       type: Boolean,

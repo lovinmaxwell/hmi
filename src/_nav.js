@@ -8,36 +8,36 @@ export default {
         variant: 'primary'
       }
     },
-    {
-      name: 'Employee',
-      url: '/theme',
-      icon: 'icon-people',
-      children: [
-        {
-          name: 'Employee',
-          url: '/theme/colors',
-          icon: 'icon-people'
-        },
-        {
-          name: 'New Employee',
-          url: '/theme/colors',
-          icon: 'icon-people'
-        }
-      ]
-    },
+    // {
+    //   name: 'Employee',
+    //   url: '/employee',
+    //   icon: 'icon-people',
+    //   children: [
+    //     {
+    //       name: 'Employee',
+    //       url: '/employee/Employee',
+    //       icon: 'icon-people'
+    //     },
+    //     {
+    //       name: 'New Employee',
+    //       url: '/employee/Employee',
+    //       icon: 'icon-people'
+    //     }
+    //   ]
+    // },
     {
       name: 'Company',
-      url: '/base',
+      url: '/company',
       icon: 'icon-puzzle',
       children: [
         {
           name: "Company's",
-          url: '/base/breadcrumbs',
+          url: '/company/companys',
           icon: 'icon-puzzle'
         },
         {
           name: 'Register',
-          url: '/base/cards',
+          url: '/company/Register',
           icon: 'icon-puzzle'
         }
       ]

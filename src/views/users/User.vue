@@ -1,9 +1,9 @@
 <template>
   <b-row>
-    <b-col cols="12" lg="6">
+    <b-col cols="12" xl="15">
       <b-card no-header>
         <template slot="header">
-          User id:  {{ $route.params.id }}
+          Employee id:  {{ $route.params.id }}
         </template>
         <b-table striped small fixed responsive="sm" :items="items($route.params.id)" :fields="fields">
           <template slot="value" slot-scope="data">
@@ -21,11 +21,11 @@
 <script>
 import usersData from './UsersData'
 export default {
-  name: 'User',
+  name: 'Employee',
   props: {
     caption: {
       type: String,
-      default: 'User id'
+      default: 'Employee id'
     },
   },
   data: () => {

@@ -7,14 +7,13 @@ const DefaultContainer = () => import('@/containers/DefaultContainer')
 // Views
 const Dashboard = () => import('@/views/Dashboard')
 
-const Colors = () => import('@/views/theme/Colors')
-const Typography = () => import('@/views/theme/Typography')
+const Employee = () => import('@/views/employee/Employee')
 
 const Charts = () => import('@/views/Charts')
 
 // Views - Components
-const Cards = () => import('@/views/base/Cards')
-const Breadcrumbs = () => import('@/views/base/Breadcrumbs')
+const Companys = () => import('@/views/company/Companys')
+const CompanyRegister = () => import('@/views/company/Register')
 
 // Views - Buttons
 const Projects = () => import('@/views/project/Projects')
@@ -51,22 +50,22 @@ export default new Router({
           component: Dashboard
         },
         {
-          path: 'theme',
-          redirect: '/theme/colors',
-          name: 'Theme',
+          path: 'employee',
+          redirect: '/employee/Employee',
+          name: 'Employee',
           component: {
             render (c) { return c('router-view') }
           },
           children: [
             {
-              path: 'colors',
-              name: 'Colors',
-              component: Colors
+              path: 'Employee',
+              name: 'Employee',
+              component: Employee
             },
             {
-              path: 'typography',
-              name: 'Typography',
-              component: Typography
+              path: 'Employee',
+              name: 'Employee',
+              component: Employee
             }
           ]
         },
@@ -77,7 +76,7 @@ export default new Router({
         },
         {
           path: 'users',
-          meta: { label: 'Users'},
+          meta: { label: 'Employees'},
           component: {
             render (c) { return c('router-view') }
           },
@@ -88,29 +87,29 @@ export default new Router({
             },
             {
               path: ':id',
-              meta: { label: 'User Details'},
-              name: 'User',
+              meta: { label: 'Employee Details'},
+              name: 'Employee',
               component: User,
             },
           ]
         },
         {
-          path: 'base',
-          redirect: '/base/cards',
-          name: 'Base',
+          path: 'company',
+          redirect: '/company/cards',
+          name: 'Company',
           component: {
             render (c) { return c('router-view') }
           },
           children: [
             {
-              path: 'cards',
-              name: 'Cards',
-              component: Cards
+              path: 'Companys',
+              name: "Company's",
+              component: Companys
             },
             {
-              path: 'breadcrumbs',
-              name: 'Breadcrumbs',
-              component: Breadcrumbs
+              path: 'Register',
+              name: 'Register',
+              component: CompanyRegister
             }
           ]
         },
