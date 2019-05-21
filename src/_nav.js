@@ -11,17 +11,17 @@ export default {
     {
       name: 'Employee',
       url: '/theme',
-      icon: 'icon-drop',
+      icon: 'icon-people',
       children: [
         {
           name: 'Employee',
           url: '/theme/colors',
-          icon: 'icon-cursor'
+          icon: 'icon-people'
         },
         {
           name: 'New Employee',
           url: '/theme/colors',
-          icon: 'icon-cursor'
+          icon: 'icon-people'
         }
       ]
     },
@@ -44,17 +44,17 @@ export default {
     },
     {
       name: 'Project',
-      url: '/buttons',
+      url: '/project',
       icon: 'icon-cursor',
       children: [
         {
           name: 'All Project',
-          url: '/buttons/standard-buttons',
+          url: '/project/projects',
           icon: 'icon-cursor'
         },
         {
           name: 'Create Project',
-          url: '/buttons/dropdowns',
+          url: '/project/CreateProject',
           icon: 'icon-cursor'
         }
       ]

@@ -11,15 +11,14 @@ const Colors = () => import('@/views/theme/Colors')
 const Typography = () => import('@/views/theme/Typography')
 
 const Charts = () => import('@/views/Charts')
-const Widgets = () => import('@/views/Widgets')
 
 // Views - Components
 const Cards = () => import('@/views/base/Cards')
 const Breadcrumbs = () => import('@/views/base/Breadcrumbs')
 
 // Views - Buttons
-const StandardButtons = () => import('@/views/buttons/StandardButtons')
-const Dropdowns = () => import('@/views/buttons/Dropdowns')
+const Projects = () => import('@/views/project/Projects')
+const CreateProject = () => import('@/views/project/CreateProject')
 
 
 
@@ -116,22 +115,22 @@ export default new Router({
           ]
         },
         {
-          path: 'buttons',
-          redirect: '/buttons/standard-buttons',
-          name: 'Buttons',
+          path: 'project',
+          redirect: '/project/Projects',
+          name: 'Project',
           component: {
             render (c) { return c('router-view') }
           },
           children: [
             {
-              path: 'standard-buttons',
-              name: 'Standard Buttons',
-              component: StandardButtons
+              path: 'Projects',
+              name: 'All Projects',
+              component: Projects
             },
             {
-              path: 'dropdowns',
-              name: 'Dropdowns',
-              component: Dropdowns
+              path: 'CreateProject',
+              name: 'Create Project',
+              component: CreateProject
             }
           ]
         }

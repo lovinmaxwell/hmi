@@ -10,7 +10,6 @@
       <b-navbar-nav class="d-md-down-none">
         <b-nav-item class="px-3" to="/dashboard">Dashboard</b-nav-item>
         <b-nav-item class="px-3" to="/users" exact>Users</b-nav-item>
-        <!-- <b-nav-item class="px-3">Settings</b-nav-item> -->
       </b-navbar-nav>
       <b-navbar-nav class="ml-auto">
         <DefaultHeaderDropdownAccnt/>
@@ -42,23 +41,16 @@
 
 <script>
 import nav from '@/_nav'
-import { Header as AppHeader, SidebarToggler, Sidebar as AppSidebar, SidebarFooter, SidebarForm, SidebarHeader, SidebarMinimizer, SidebarNav, 
-// Aside as AppAside,
-//  AsideToggler,
-  Footer as TheFooter, Breadcrumb } from '@coreui/vue'
-// import DefaultAside from './DefaultAside'
+import { Header as AppHeader, SidebarToggler, Sidebar as AppSidebar, SidebarFooter, SidebarForm, SidebarHeader, SidebarMinimizer, SidebarNav,Footer as TheFooter, Breadcrumb } from '@coreui/vue'
 import DefaultHeaderDropdownAccnt from './DefaultHeaderDropdownAccnt'
 
 export default {
   name: 'DefaultContainer',
   components: {
-    // AsideToggler,
     AppHeader,
     AppSidebar,
-    // AppAside,
     TheFooter,
     Breadcrumb,
-    // DefaultAside,
     DefaultHeaderDropdownAccnt,
     SidebarForm,
     SidebarFooter,

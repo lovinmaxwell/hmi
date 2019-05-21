@@ -1,6 +1,6 @@
 <template>
   <div class="animated fadeIn">
-    <b-row>
+    <!-- <b-row>
       <b-col sm="6" lg="3">
         <b-card no-body class="bg-primary">
           <b-card-body class="pb-0">
@@ -216,7 +216,6 @@
                     <small class="text-muted">New Clients</small><br>
                     <strong class="h4">9,123</strong>
                     <div class="chart-wrapper" :style="{ top: '-10px'}">
-                      <!--<callout-chart-example :data="[35, 23, 56, 22, 97, 23, 64]" variant="#20a8d8" width="80" height="30" />-->
                       <callout-chart-example chartId="callout-chart-01" :data="[35, 23, 56, 22, 97, 23, 64]" variant="info" width="80" height="30" />
                     </div>
                   </Callout>
@@ -444,7 +443,7 @@
           </b-table>
         </b-card>
       </b-col>
-    </b-row>
+    </b-row> -->
   </div>
 </template>
 
