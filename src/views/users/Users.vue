@@ -10,13 +10,7 @@
           <template slot="name" slot-scope="data">
             <strong>{{data.item.name}}</strong>
           </template>
-          <template slot="status" slot-scope="data">
-            <b-badge :variant="getBadge(data.item.status)">{{data.item.status}}</b-badge>
-          </template>
         </b-table>
-        <nav>
-          <b-pagination size="sm" :total-rows="getRowCount(items)" :per-page="perPage" v-model="currentPage" prev-text="Prev" next-text="Next" hide-goto-end-buttons/>
-        </nav>
       </b-card>
       </transition>
     </b-col>
@@ -27,56 +21,19 @@
 import usersData from './UsersData'
 export default {
   name: 'Employees',
-  props: {
-    caption: {
-      type: String,
-      default: 'Employees'
-    },
-    hover: {
-      type: Boolean,
-      default: true
-    },
-    striped: {
-      type: Boolean,
-      default: true
-    },
-    bordered: {
-      type: Boolean,
-      default: false
-    },
-    small: {
-      type: Boolean,
-      default: false
-    },
-    fixed: {
-      type: Boolean,
-      default: false
-    }
-  },
   data: () => {
     return {
-      items: usersData.filter((user) => user.id < 42),
+      items: usersData,
       fields: [
         {key: 'id'},
         {key: 'name'},
         {key: 'registered'},
         {key: 'role'},
         {key: 'status'}
-      ],
-      currentPage: 1,
-      perPage: 5,
-      totalRows: 0
+      ]
     }
   },
-  computed: {
-  },
   methods: {
-    getBadge (status) {
-      return status === 'Active' ? 'success'
-        : status === 'Inactive' ? 'secondary'
-          : status === 'Pending' ? 'warning'
-            : status === 'Banned' ? 'danger' : 'primary'
-    },
     getRowCount (items) {
       return items.length
     },
@@ -91,9 +48,3 @@ export default {
   }
 }
 </script>
-
-<style scoped>
-.card-body >>> table > tbody > tr > td {
-  cursor: pointer;
-}
-</style>

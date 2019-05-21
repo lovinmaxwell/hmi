@@ -1,9 +1,9 @@
 <template>
   <b-row>
     <b-col cols="12" xl="15">
-      <b-card no-header>
+      <b-card >
         <template slot="header">
-          Employee id:  {{ $route.params.id }}
+          Employee ID :  {{ $route.params.id }}
         </template>
         <b-table striped small fixed responsive="sm" :items="items($route.params.id)" :fields="fields">
           <template slot="value" slot-scope="data">

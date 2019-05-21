@@ -8,23 +8,6 @@ export default {
         variant: 'primary'
       }
     },
-    // {
-    //   name: 'Employee',
-    //   url: '/employee',
-    //   icon: 'icon-people',
-    //   children: [
-    //     {
-    //       name: 'Employee',
-    //       url: '/employee/Employee',
-    //       icon: 'icon-people'
-    //     },
-    //     {
-    //       name: 'New Employee',
-    //       url: '/employee/Employee',
-    //       icon: 'icon-people'
-    //     }
-    //   ]
-    // },
     {
       name: 'Company',
       url: '/company',
@@ -58,11 +41,6 @@ export default {
           icon: 'icon-cursor'
         }
       ]
-    },
-    {
-      name: 'Charts',
-      url: '/charts',
-      icon: 'icon-pie-chart'
     }
   ]
 }
