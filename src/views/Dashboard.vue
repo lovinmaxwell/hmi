@@ -1,6 +1,6 @@
 <template>
   <div class="animated fadeIn">
-    <b-row>
+    <!-- <b-row>
       <b-col sm="6" lg="3">
         <div class="brand-card">
           <div class="brand-card-header bg-facebook">
@@ -286,7 +286,7 @@
           </b-row>
         </b-card>
       </b-col>
-    </b-row> 
+    </b-row>  -->
   </div>
 </template>
 
