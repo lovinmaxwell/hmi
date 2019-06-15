@@ -5,12 +5,14 @@ import Vue from 'vue'
 import BootstrapVue from 'bootstrap-vue'
 import App from './App'
 import router from './routers'
-
+import VueParticles from 'vue-particles'
+Vue.use(VueParticles)
 Vue.use(BootstrapVue)
+
 
 new Vue({
   el: '#app',
-  router,
+    router,
   template: '<App/>',
   components: {
     App
