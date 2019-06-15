@@ -25,6 +25,8 @@ export default {
         }
       ]
     },
+    
+    
     {
       name: 'Project',
       url: '/project',
@@ -36,11 +38,12 @@ export default {
           icon: 'icon-cursor'
         },
         {
-          name: 'Create Project',
-          url: '/project/CreateProject',
+          name: 'Add Requirements',
+          url: '/project/AddRequirements',
           icon: 'icon-cursor'
-        }
+        },
+    
       ]
     }
   ]
-}
+} 
