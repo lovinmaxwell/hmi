@@ -9,7 +9,7 @@ const Companys = () => import('@/views/company/Companys')
 const CompanyRegister = () => import('@/views/company/Register')
 
 const Projects = () => import('@/views/project/Projects')
-const CreateProject = () => import('@/views/project/CreateProject')
+const CreateProject = () => import('@/views/project/AddRequirements')
 
 const Login = () => import('@/views/pages/Login')
 const Register = () => import('@/views/pages/Register')
@@ -74,6 +74,8 @@ export default new Router({
             }
           ]
         },
+        
+        
         {
           path: 'project',
           redirect: '/project/Projects',
@@ -84,15 +86,15 @@ export default new Router({
           children: [
             {
               path: 'Projects',
-              name: 'All Projects',
+              name: 'All Project',
               component: Projects
             },
             {
-              path: 'CreateProject',
-              name: 'Create Project',
+              path: 'AddRequirements',
+              name: 'Add Requirements',
               component: CreateProject
-            }
-          ]
+            },
+                   ]
         }
       ]
     }, 
@@ -118,3 +120,4 @@ export default new Router({
     }
   ]
 })
+
