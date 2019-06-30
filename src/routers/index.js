@@ -8,7 +8,7 @@ const Dashboard = () => import('@/views/Dashboard')
 const Companys = () => import('@/views/company/Companys')
 const CompanyRegister = () => import('@/views/company/Register')
 
-const Projects = () => import('@/views/project/Projects')
+const Projects = () => import('@/views/project/Requirements')
 const CreateProject = () => import('@/views/project/AddRequirements')
 
 const Login = () => import('@/views/pages/Login')
@@ -16,6 +16,8 @@ const Register = () => import('@/views/pages/Register')
 
 const Users = () => import('@/views/users/Users')
 const User = () => import('@/views/users/User')
+
+const Charts = () => import('@/views/Charts')
 
 Vue.use(Router)
 
@@ -35,7 +37,7 @@ export default new Router({
           name: 'Dashboard',
           component: Dashboard
         },
-        {
+                {
           path: 'users',
           meta: { label: 'Employees'},
           component: {
@@ -78,22 +80,28 @@ export default new Router({
         
         {
           path: 'project',
-          redirect: '/project/Projects',
+          redirect: '/project/Requirements',
           name: 'Project',
           component: {
             render (c) { return c('router-view') }
           },
           children: [
             {
-              path: 'Projects',
-              name: 'All Project',
+              path: 'Requirements',
+              name: 'Requirements',
               component: Projects
+            },
+            {
+              path: 'charts',
+              name: 'Charts',
+              component: Charts
             },
             {
               path: 'AddRequirements',
               name: 'Add Requirements',
               component: CreateProject
             },
+
                    ]
         }
       ]
