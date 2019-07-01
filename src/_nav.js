@@ -33,13 +33,18 @@ export default {
       icon: 'icon-cursor',
       children: [
         {
-          name: 'All Project',
-          url: '/project/projects',
+          name: 'Requirements',
+          url: '/project/Requirements',
           icon: 'icon-cursor'
         },
         {
           name: 'Add Requirements',
           url: '/project/AddRequirements',
+          icon: 'icon-cursor'
+        },
+        {
+          name: 'User Stories - Charts',
+          url: '/project/charts',
           icon: 'icon-cursor'
         },
     
