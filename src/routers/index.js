@@ -2,22 +2,16 @@ import Vue from 'vue'
 import Router from 'vue-router'
 
 const DefaultContainer = () => import('@/containers/DefaultContainer')
-
 const Dashboard = () => import('@/views/Dashboard')
-
 const Companys = () => import('@/views/company/Companys')
 const CompanyRegister = () => import('@/views/company/Register')
-
-const Projects = () => import('@/views/project/Requirements')
+const Requirements = () => import('@/views/project/Requirements')
 const CreateProject = () => import('@/views/project/AddRequirements')
-
 const Login = () => import('@/views/pages/Login')
 const Register = () => import('@/views/pages/Register')
-
 const Users = () => import('@/views/users/Users')
 const User = () => import('@/views/users/User')
-
-const Charts = () => import('@/views/Charts')
+// const Charts = () => import('@/views/Charts')
 
 Vue.use(Router)
 
@@ -76,8 +70,6 @@ export default new Router({
             }
           ]
         },
-        
-        
         {
           path: 'project',
           redirect: '/project/Requirements',
@@ -89,20 +81,19 @@ export default new Router({
             {
               path: 'Requirements',
               name: 'Requirements',
-              component: Projects
+              component: Requirements
             },
-            {
-              path: 'charts',
-              name: 'Charts',
-              component: Charts
-            },
+            // {
+            //   path: 'charts',
+            //   name: 'Charts',
+            //   component: Charts
+            // },
             {
               path: 'AddRequirements',
               name: 'Add Requirements',
               component: CreateProject
             },
-
-                   ]
+          ]
         }
       ]
     }, 

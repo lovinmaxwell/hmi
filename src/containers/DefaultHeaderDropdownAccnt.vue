@@ -5,7 +5,7 @@
         src="img/avatars/6.jpg"
         class="img-avatar"
         alt="admin@bootstrapmaster.com" />
-    </template>\
+    </template>
     <template slot="dropdown">
       <b-dropdown-header
         tag="div"
