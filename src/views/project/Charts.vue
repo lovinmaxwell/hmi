@@ -4,8 +4,6 @@
       <h3>Project Phase 1</h3>
 
       <draggable
-        id="first"
-        data-source="juju"
         :list="list"
         class="list-group"
         draggable=".item"
@@ -25,8 +23,14 @@
           role="group"
           aria-label="Basic example"
         >
+          <div class="row">
+           <div class="text-left col-md-6">
           <button class="btn btn-secondary" @click="add">Add</button>
+          </div>
+          <div class="text-right col-md-6">
           <button class="btn btn-secondary" @click="replace">Replace</button>
+          </div>
+        </div>
         </div>
       </draggable>
     </div>
@@ -34,7 +38,9 @@
     <div class="col-4">
       <h3>Project Phase 2</h3>
 
-      <draggable :list="list2" class="list-group" draggable=".item" group="a">
+      <draggable :list="list2" 
+      class="list-group" 
+      draggable=".item" group="a">
         <div
           class="list-group-item item"
           v-for="element in list2"
@@ -49,8 +55,14 @@
           role="group"
           aria-label="Basic example"
         >
+          <div class="row">
+           <div class="text-left col-md-6">
           <button class="btn btn-secondary" @click="add2">Add</button>
+          </div>
+          <div class="text-right col-md-6">
           <button class="btn btn-secondary" @click="replace2">Replace</button>
+          </div>
+        </div>
         </div>
       </draggable>
     </div>
@@ -73,8 +85,14 @@
           role="group"
           aria-label="Basic example"
         >
+          <div class="row">
+           <div class="text-left col-md-6">
           <button class="btn btn-secondary" @click="add3">Add</button>
+          </div>
+          <div class="text-right col-md-6">
           <button class="btn btn-secondary" @click="replace3">Replace</button>
+          </div>
+        </div>
         </div>
       </draggable>
     </div>
@@ -83,8 +101,6 @@
       <h3>Project Phase 4</h3>
 
       <draggable
-        id="first"
-        data-source="juju"
         :list="list4"
         class="list-group"
         draggable=".item"
@@ -104,15 +120,17 @@
           role="group"
           aria-label="Basic example"
         >
+        <div class="row">
+           <div class="text-left col-md-6">
           <button class="btn btn-secondary" @click="add4">Add</button>
+          </div>
+          <div class="text-right col-md-6">
           <button class="btn btn-secondary" @click="replace4">Replace</button>
+          </div>
+        </div>
         </div>
       </draggable>
     </div>
-
-    <!-- <rawDisplayer class="col-2" :value="list" title="List" />
-
-    <rawDisplayer class="col-2" :value="list2" title="List2" /> -->
   </div>
 </template>
 
@@ -120,8 +138,6 @@
 import draggable from "vuedraggable";
 let id = 1;
 export default {
-  name: "two-list-headerslots",
-  display: "Two list header slot",
   order: 14,
   components: {
     draggable
@@ -151,28 +167,28 @@ export default {
   },
   methods: {
     add: function() {
-      this.list.push({ name: "Juan " + id, id: id++ });
+      this.list.push({ name: "Task " + id, id: id++ });
     },
     replace: function() {
-      this.list = [{ name: "Edgard", id: id++ }];
+      this.list = [{ name: "Scope 1", id: id++ }];
     },
     add2: function() {
-      this.list2.push({ name: "Juan " + id, id: id++ });
+      this.list2.push({ name: "Task " + id, id: id++ });
     },
     replace2: function() {
-      this.list2 = [{ name: "Edgard", id: id++ }];
+      this.list2 = [{ name: "Scope 2", id: id++ }];
     },
     add3: function() {
-      this.list3.push({ name: "Juan " + id, id: id++ });
+      this.list3.push({ name: "Task " + id, id: id++ });
     },
     replace3: function() {
-      this.list3 = [{ name: "Edgard", id: id++ }];
+      this.list3 = [{ name: "Scope 3", id: id++ }];
     },
     add4: function() {
-      this.list4.push({ name: "Juan " + id, id: id++ });
+      this.list4.push({ name: "Task " + id, id: id++ });
     },
     replace4: function() {
-      this.list4 = [{ name: "Edgard", id: id++ }];
+      this.list4 = [{ name: "Scope 4", id: id++ }];
     }
     
   }

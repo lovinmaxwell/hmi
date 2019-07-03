@@ -25,8 +25,8 @@
         </el-collapse-item>
       </draggable>
     </div>
-    <rawDisplayer class="col-3" :value="list" title="List" />
-    <rawDisplayer class="col-1" :value="activeNames" title="activeNames" />
+    <!-- <rawDisplayer class="col-3" :value="list" title="List" />
+    <rawDisplayer class="col-1" :value="activeNames" title="activeNames" /> -->
   </div>
 </template>
 
