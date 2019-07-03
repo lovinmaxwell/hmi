@@ -129,23 +129,23 @@ export default {
   data() {
     return {
       list: [
-        { name: "John 1", id: 0 },
-        { name: "Joao 2", id: 1 },
-        { name: "Jean 3", id: 2 }
+        { name: "Task 1", id: 0 },
+        { name: "Task 2", id: 1 },
+        { name: "Task 3", id: 2 }
       ],
       list2: [
-        { name: "Jonny 4", id: 3 }, 
-        { name: "Guisepe 5", id: 4 }
+        { name: "Task 4", id: 3 }, 
+        { name: "Task 5", id: 4 }
         ],
       list3: [
-        { name: "John 1", id: 5 },
-        { name: "Joao 2", id: 6 },
-        { name: "Jean 3", id: 7 }
+        { name: "Task 6", id: 5 },
+        { name: "Task 7", id: 6 },
+        { name: "Task 8", id: 7 }
       ],
       list4: [
-        { name: "John 1", id: 8 },
-        { name: "Joao 2", id: 9 },
-        { name: "Jean 3", id: 10 }
+        { name: "Task 9 ", id: 8 },
+        { name: "Task 10 ", id: 9 },
+        { name: "Task 11", id: 10 }
       ]
     };
   },
