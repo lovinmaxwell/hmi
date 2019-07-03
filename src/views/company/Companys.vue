@@ -3,7 +3,7 @@
     <b-col cols="12" xl="15">
       <transition name="slide">
       <b-card :header="caption">
-        <b-table :hover="hover" :striped="striped" :bordered="bordered" :small="small" :fixed="fixed" responsive="sm" :items="items" :fields="fields" :current-page="currentPage" :per-page="perPage" @row-clicked="rowClicked">
+        <b-table :hover="hover" :striped="striped" :bordered="bordered" :small="small" :fixed="fixed" responsive="sm" :items="items" :fields="fields" :current-page="currentPage" :per-page="perPage" >
           <template slot="id" slot-scope="data">
             <strong>{{data.item.id}}</strong>
           </template>

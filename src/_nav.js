@@ -11,7 +11,7 @@ export default {
     {
       name: 'Company',
       url: '/company',
-      icon: 'icon-puzzle',
+      icon: 'icon-menu',
       children: [
         {
           name: "Company's",
@@ -29,7 +29,7 @@ export default {
     {
       name: 'Project',
       url: '/project',
-      icon: 'icon-cursor',
+      icon: 'icon-menu',
       children: [
         {
           name: 'Requirements',
@@ -44,7 +44,7 @@ export default {
         {
           name: 'User Stories',
           url: '/project/charts',
-          icon: 'icon-cursor'
+          icon: 'icon-map'
         },
     
       ]
