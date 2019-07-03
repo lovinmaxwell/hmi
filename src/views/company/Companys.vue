@@ -83,14 +83,6 @@ export default {
     getRowCount (items) {
       return items.length
     },
-    userLink (id) {
-      return `users/${id.toString()}`
-    },
-    rowClicked (item) {
-      const userLink = this.userLink(item.id)
-      this.$router.push({path: userLink})
-    }
-
   }
 }
 </script>
