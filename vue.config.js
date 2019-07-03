@@ -1,4 +1,9 @@
 module.exports = {
-  lintOnSave: false,
-  runtimeCompiler: true
+  configureWebpack: {
+    resolve: {
+      alias: {
+        'vue$': 'vue/dist/vue.esm.js'
+      }
+    }
+  }
 }

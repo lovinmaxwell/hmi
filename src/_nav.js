@@ -24,8 +24,7 @@ export default {
           icon: 'icon-puzzle'
         }
       ]
-    },
-    
+    },    
     
     {
       name: 'Project',
@@ -42,11 +41,11 @@ export default {
           url: '/project/AddRequirements',
           icon: 'icon-cursor'
         },
-        // {
-        //   name: 'User Stories - Charts',
-        //   url: '/project/charts',
-        //   icon: 'icon-cursor'
-        // },
+        {
+          name: 'User Stories',
+          url: '/project/charts',
+          icon: 'icon-cursor'
+        },
     
       ]
     }

@@ -56,9 +56,7 @@
 
 <script>
 export default {
-  
     name: 'Requirements'
-    
   }
 </script>
 

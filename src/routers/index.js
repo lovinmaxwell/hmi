@@ -11,7 +11,7 @@ const Login = () => import('@/views/pages/Login')
 const Register = () => import('@/views/pages/Register')
 const Users = () => import('@/views/users/Users')
 const User = () => import('@/views/users/User')
-// const Charts = () => import('@/views/Charts')
+const Charts = () => import('@/views/project/Charts')
 
 Vue.use(Router)
 
@@ -31,11 +31,13 @@ export default new Router({
           name: 'Dashboard',
           component: Dashboard
         },
-                {
+        {
           path: 'users',
           meta: { label: 'Employees'},
           component: {
-            render (c) { return c('router-view') }
+            render (c) { 
+              return c('router-view') 
+            }
           },
           children: [
             {
@@ -55,7 +57,9 @@ export default new Router({
           redirect: '/company/cards',
           name: 'Company',
           component: {
-            render (c) { return c('router-view') }
+            render (c) { 
+              return c('router-view') 
+            }
           },
           children: [
             {
@@ -75,7 +79,9 @@ export default new Router({
           redirect: '/project/Requirements',
           name: 'Project',
           component: {
-            render (c) { return c('router-view') }
+            render (c) { 
+              return c('router-view') 
+            }
           },
           children: [
             {
@@ -83,11 +89,11 @@ export default new Router({
               name: 'Requirements',
               component: Requirements
             },
-            // {
-            //   path: 'charts',
-            //   name: 'Charts',
-            //   component: Charts
-            // },
+            {
+              path: 'charts',
+              name: 'Charts',
+              component: Charts
+            },
             {
               path: 'AddRequirements',
               name: 'Add Requirements',
@@ -102,7 +108,9 @@ export default new Router({
       redirect: '/pages/login',
       name: 'Pages',
       component: {
-        render (c) { return c('router-view') }
+        render (c) { 
+          return c('router-view') 
+        }
       },
       children: [
         {
