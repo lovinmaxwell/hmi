@@ -3,6 +3,9 @@
     <AppHeader fixed>
       <SidebarToggler class="d-lg-none" display="md" mobile />
       <SidebarToggler class="d-md-down-none" display="lg" />
+      <b-link class="navbar-brand" to="">
+        <img class="navbar-brand-full" src="img/brand/hm.png" width="55" height="50">
+      </b-link>
       <b-navbar-nav class="d-md-down-none">
         <b-nav-item class="px-3" to="/dashboard">Dashboard</b-nav-item>
         <b-nav-item class="px-3" to="/users" exact>Employee</b-nav-item>
