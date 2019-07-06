@@ -1,21 +1,27 @@
 <script>
 import { Line } from 'vue-chartjs'
+import { CustomTooltips } from '@coreui/coreui-plugin-chartjs-custom-tooltips'
+import { hexToRgba } from '@coreui/coreui/dist/js/coreui-utilities'
 
 export default {
+  components: {
+    hexToRgba,
+    CustomTooltips
+  },
   extends: Line,
   mounted () {
     this.renderChart(
       {
-        labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
+        labels: ['January', 'February', 'March', 'April', 'May', 'June'],
         datasets: [
           {
-            label: 'Data One',
-            backgroundColor: '#E46651',
-            data: [30, 39, 10, 50, 30, 70, 35]
+            label: 'New Entries',
+            backgroundColor: hexToRgba('#E91E63', 90),
+            data: [30, 39, 10, 50, 30, 70, 55]
           },
           {
-            label: 'Data Two',
-            backgroundColor: '#00D8FF',
+            label: 'Old Entries',
+            backgroundColor: hexToRgba('#00C853', 90),
             data: [39, 80, 40, 35, 40, 20, 45]
           }
         ]
@@ -25,6 +31,7 @@ export default {
         maintainAspectRatio: true,
         tooltips: {
           enabled: false,
+          custom: CustomTooltips,
           intersect: true,
           mode: 'index',
           position: 'nearest',

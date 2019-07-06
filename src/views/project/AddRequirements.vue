@@ -1,147 +1,393 @@
 <template>
-
-  <div class="wrapper">
-
-    <!-- <h1  style="text-align:center" > User Stories </h1> -->
-    <!-- <b-img src="https://mir-s3-cdn-cf.behance.net/project_modules/1400/15fa5b72352761.5be453fb1b1da.jpg"></b-img> -->
-
-    <b-img width="300" class="img-circle" alt="Cinque Terre"
-      src="https://i.pinimg.com/originals/a7/e2/57/a7e2579c60633c543b532c1749716311.gif"></b-img>
-    <b-img width="180" style=" position: absolute; right: 625px;" height="350"
-      src="https://toggl.com/toggl-desktop/images/toggl-man-f7a86f4d8178c67f2cd53ef408f9460e.png"></b-img>
-    <b-img width="200" class="img-circle" alt="Cinque Terre" style=" position: absolute; top: 130px;" height="150"
-      src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/559a6372352761.5be59680ee903.gif"></b-img>
-    <b-img width="200" class="img-circle" alt="Cinque Terre" style=" position: absolute; left: 1020px;" height="150"
-      src="https://i.pinimg.com/originals/fe/ba/99/feba99ebc5c77931d3e790249c554648.gif"></b-img>
-    <b-img width="300" class="img-circle" alt="Cinque Terre" style=" position: absolute; right: 80px;"
-      src="https://i.pinimg.com/originals/10/74/4c/10744cec98ad9c67120f8d6134d59b92.gif"></b-img>
-
-    <!-- <b-img width="550" height="300" class="rounded float-center" src="http://img.zcool.cn/community/014aa05af1b7eca801207ab4267f65.gif" ></b-img> -->
-    <!-- <img src="https://mdbootstrap.com/img/logo/mdb-transparent-250px.png" class="animated bounce infinite" alt="Transparent MDB Logo"> -->
-    <!-- <b-img src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/559a6372352761.5be59680ee903.gif"></b-img> -->
-    <!-- <b-img src="http://img.zcool.cn/community/01ac485af1bc59a801207ab43309c0.gif"></b-img> -->
-    <!-- <b-img src="https://toggl.com/toggl-desktop/images/toggl-man-f7a86f4d8178c67f2cd53ef408f9460e.png" fluid alt="Responsive image"></b-img> -->
-
-    <br /> <br /> <br />
-
-    <h2>
-      <b-form-group id="fieldset-horizontal" label-size="lg"
-        label="Model User Story : As a 'customer' I want to 'see how many products sold' so that 'I can update my stock details'"
-        label-for="input-lg">
-      </b-form-group>
-
-      <b-form-group id="fieldset-horizontal" label-cols="1" label-cols-lg="3" label-size="lg"
-        label="Enter the requirements below:" label-for="input-lg">
-        <!-- <b-form-input id="input-lg" size="lg"></b-form-input> -->
-      </b-form-group>
-    </h2>
-
-
-    <div class="row">
-
-      <div class=" col-sm-4  card-body">
-        <b-card bg-variant="danger">
-          <b-form-group label-cols-lg="3" label="User Stories" label-size="lg" label-class="font-weight-bold pt-0"
-            class="mb-0">
-            <b-form-group label-cols-sm="3" label="As a < >" label-align-sm="right" label-for="nested-street"
-              placeholder="Small textarea">
-              <b-form-input id="nested-street"></b-form-input>
-            </b-form-group>
-
-            <b-form-group label-cols-sm="3" label="I want to < >" label-align-sm="right" label-for="nested-city">
-              <b-form-input id="nested-city"></b-form-input>
-            </b-form-group>
-
-            <b-form-group label-cols-sm="3" label="So that < >" label-align-sm="right" label-for="nested-state">
-              <b-form-input id="nested-state"></b-form-input>
-            </b-form-group>
-
-            <b-form-group label-cols-sm="3" label="Status" label-align-sm="right" class="mb-0">
-              <b-form-radio-group class="pt-2" :options="['Done']"></b-form-radio-group>
-            </b-form-group>
-          </b-form-group>
-        </b-card>
-      </div>
-
-      <div class=" col-sm-4  card-body">
-        <b-card bg-variant="success">
-          <b-form-group label-cols-lg="3" label="User Stories" label-size="lg" label-class="font-weight-bold pt-0"
-            class="mb-0">
-            <b-form-group label-cols-sm="3" label="As a < >" label-align-sm="right" label-for="nested-street"
-              placeholder="Small textarea">
-              <b-form-input id="nested-street"></b-form-input>
-            </b-form-group>
-
-            <b-form-group label-cols-sm="3" label="I want to < >" label-align-sm="right" label-for="nested-city">
-              <b-form-input id="nested-city"></b-form-input>
-            </b-form-group>
-
-            <b-form-group label-cols-sm="3" label="So that < >" label-align-sm="right" label-for="nested-state">
-              <b-form-input id="nested-state"></b-form-input>
-            </b-form-group>
-
-            <b-form-group label-cols-sm="3" label="Status" label-align-sm="right" class="mb-0">
-              <b-form-radio-group class="pt-2" :options="['Done']"></b-form-radio-group>
-            </b-form-group>
-          </b-form-group>
-        </b-card>
-      </div>
-
-
-
-
-      <div class=" col-sm-4  card-body">
-        <b-card bg-variant="dark">
-          <b-form-group label-cols-lg="3" label="User Stories" label-size="lg" label-class="font-weight-bold pt-0"
-            class="mb-0">
-            <b-form-group label-cols-sm="3" label="As a < >" label-align-sm="right" label-for="nested-street"
-              placeholder="Small textarea">
-              <b-form-input id="nested-street"></b-form-input>
-            </b-form-group>
-
-            <b-form-group label-cols-sm="3" label="I want to < >" label-align-sm="right" label-for="nested-city">
-              <b-form-input id="nested-city"></b-form-input>
-            </b-form-group>
-
-            <b-form-group label-cols-sm="3" label="So that < >" label-align-sm="right" label-for="nested-state">
-              <b-form-input id="nested-state"></b-form-input>
-            </b-form-group>
-
-            <b-form-group label-cols-sm="3" label="Status" label-align-sm="right" class="mb-0">
-              <b-form-radio-group class="pt-2" :options="['Done']"></b-form-radio-group>
-            </b-form-group>
-          </b-form-group>
-        </b-card>
-      </div>
+  <div class="row">
+    <div class="col-4">
+      <h3>Project 1</h3>
+      <draggable tag="ul" :list="list" class="list-group" handle=".handle">
+        <li class="list-group-item" v-for="(element, idx) in list" :key="element.name">
+          <i class="fa fa-align-justify handle"></i>
+          <span class="text">{{ element.name }} </span>
+          <input type="text" class="form-control" v-model="element.text" />
+          <i class="fa fa-times close" @click="removeAt(idx)"></i>
+        </li>
+        <div slot="header" class="btn-group list-group-item">
+          <button class="btn btn-secondary button" @click="add">Add</button>
+        </div>
+      </draggable>
     </div>
 
+    <div class="col-md-4">
+      <h3>Project 2</h3>
+      <draggable tag="ul" :list="list2" class="list-group" handle=".handle">
+        <li class="list-group-item" v-for="(element, idx) in list2" :key="element.name">
+          <i class="fa fa-align-justify handle"></i>
+          <span class="text">{{ element.name }} </span>
+          <input type="text" class="form-control" v-model="element.text" />
+          <i class="fa fa-times close" @click="removeAt2(idx)"></i>
+        </li>
+        <div slot="header" class="btn-group list-group-item">
+          <button class="btn btn-secondary button" @click="add2">Add</button>
+        </div>
+      </draggable>
+    </div>
 
-    <b-row>
-      <form method="get" action="/dashboard">
-        <b-button pill type="submit" variant="success">Next</b-button>
-      </form>
-    </b-row>
+    <div class="col-md-4">
+      <h3>Project 3</h3>
+      <draggable tag="ul" :list="list3" class="list-group" handle=".handle">
+        <li class="list-group-item" v-for="(element, idx) in list3" :key="element.name">
+          <i class="fa fa-align-justify handle"></i>
+          <span class="text">{{ element.name }} </span>
+          <input type="text" class="form-control" v-model="element.text" />
+          <i class="fa fa-times close" @click="removeAt3(idx)"></i>
+        </li>
+        <div slot="header" class="btn-group list-group-item">
+          <button class="btn btn-secondary button" @click="add3">Add</button>
+        </div>
+      </draggable>
+    </div>
 
+    <div class="col-md-4">
+      <h3>Project 4</h3>
+      <draggable tag="ul" :list="list4" class="list-group" handle=".handle">
+        <li class="list-group-item" v-for="(element, idx) in list4" :key="element.name">
+          <i class="fa fa-align-justify handle"></i>
+          <span class="text">{{ element.name }} </span>
+          <input type="text" class="form-control" v-model="element.text" />
+          <i class="fa fa-times close" @click="removeAt4(idx)"></i>
+        </li>
+        <div slot="header" class="btn-group list-group-item">
+          <button class="btn btn-secondary button" @click="add4">Add</button>
+        </div>
+      </draggable>
+    </div>
+
+    <div class="col-md-4">
+      <h3>Project 5</h3>
+      <draggable tag="ul" :list="list5" class="list-group" handle=".handle">
+        <li class="list-group-item" v-for="(element, idx) in list5" :key="element.name">
+          <i class="fa fa-align-justify handle"></i>
+          <span class="text">{{ element.name }} </span>
+          <input type="text" class="form-control" v-model="element.text" />
+          <i class="fa fa-times close" @click="removeAt5(idx)"></i>
+        </li>
+        <div slot="header" class="btn-group list-group-item">
+          <button class="btn btn-secondary button" @click="add5">Add</button>
+        </div>
+      </draggable>
+    </div>
+
+    <div class="col-md-4">
+      <h3>Project 6</h3>
+      <draggable tag="ul" :list="list6" class="list-group" handle=".handle">
+        <li class="list-group-item" v-for="(element, idx) in list6" :key="element.name">
+          <i class="fa fa-align-justify handle"></i>
+          <span class="text">{{ element.name }} </span>
+          <input type="text" class="form-control" v-model="element.text" />
+          <i class="fa fa-times close" @click="removeAt6(idx)"></i>
+        </li>
+        <div slot="header" class="btn-group list-group-item">
+          <button class="btn btn-secondary button" @click="add6">Add</button>
+        </div>
+      </draggable>
+    </div>
+    <div class="row" style=" margin-top: 10%;  padding: 1px;">
+      <div class="col-mb-3">
+        <div>
+        <b-card bg-variant="dark" title="Functional Requirements"
+          img-src="https://thumbs.gfycat.com/PinkPiercingBull-size_restricted.gif" img-alt="Image" img-top tag="article"
+          style="max-width: 18rem; max-height: 19rem;">
+          <b-card-text>
+            Express function or feature and define what is required
+          </b-card-text>
+        </b-card>
+      </div>
+      </div>
+      <div class="col-mb-3">
+        <div>
+        <b-img class="img-circle" width="280" height="280" 
+          src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/ae38db72352761.5be596820e239.gif"></b-img>
+      </div>
+      </div>
+      <div class="col-mb-3">
+        <div>
+        <b-img class="img-circle" width="280" height="280" 
+          src="https://i.pinimg.com/originals/96/18/a6/9618a64ffc8b56bfaa1f071617f4a061.gif"></b-img>
+      </div>
+      </div>
+      <div class="col-mb-3">
+        <div>
+        <b-card bg-variant="danger" title="Non-Functional Requirements"
+          img-src="https://thumbs.gfycat.com/PinkPiercingBull-size_restricted.gif" img-alt="Image" img-top tag="article"
+          style="max-width: 18rem; max-height: 19rem;" class="mb-2">
+          <b-card-text>
+            Define how well, or to what level a solution needs to behave
+          </b-card-text>
+          <!-- <b-button href="#" variant="primary">Go somewhere</b-button> -->
+        </b-card>
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 
 <script>
+  let id = 0;
+  import draggable from "vuedraggable";
   export default {
-
-    name: 'Create Requirements',
-  }
+    order: 5,
+    components: {
+      draggable
+    },
+    data() {
+      return {
+        list: [{
+            name: "Task 1",
+            text: "",
+            id: 1
+          },
+          {
+            name: "Task 2",
+            text: "",
+            id: 2
+          },
+          {
+            name: "Task 3",
+            text: "",
+            id: 3
+          }
+        ],
+        list2: [{
+            name: "Task 1",
+            id: 1,
+            text: ""
+          },
+          {
+            name: "Task 2",
+            id: 2,
+            text: ""
+          }
+        ],
+        list3: [{
+            name: "Task 1",
+            id: 1,
+            text: ""
+          },
+          {
+            name: "Task 2",
+            id: 2,
+            text: ""
+          }
+        ],
+        list4: [{
+            name: "Task 1",
+            id: 1,
+            text: ""
+          },
+          {
+            name: "Task 2",
+            id: 2,
+            text: ""
+          }
+        ],
+        list5: [{
+            name: "Task 1",
+            id: 1,
+            text: ""
+          },
+          {
+            name: "Task 2",
+            id: 2,
+            text: ""
+          }
+        ],
+        list6: [{
+            name: "Task 1",
+            id: 1,
+            text: ""
+          },
+          {
+            name: "Task 2",
+            id: 2,
+            text: ""
+          }
+        ],
+        dragging: true
+      };
+    },
+    computed: {
+      draggingInfo() {
+        return this.dragging ? "under drag" : "";
+      }
+    },
+    methods: {
+      removeAt(idx) {
+        this.list.splice(idx, 1);
+      },
+      add: function () {
+        var idC1 = this.list;
+        var idC2 = Math.max.apply(Math, this.list.map(function (o) {
+          return o.id;
+        }))
+        console.log(idC1);
+        console.log(idC2);
+        var iid;
+        if (this.list.length <= 0) {
+          iid = 0;
+        } else {
+          iid = idC2
+        }
+        iid++;
+        this.list.push({
+          name: "Task " + iid,
+          id: iid,
+          text: ""
+        });
+      },
+      removeAt2(idx) {
+        this.list2.splice(idx, 1);
+      },
+      add2: function () {
+        var idC1 = this.list2;
+        var idC2 = Math.max.apply(Math, this.list2.map(function (o) {
+          return o.id;
+        }))
+        console.log(idC1);
+        console.log(idC2);
+        var iid;
+        if (this.list2.length <= 0) {
+          iid = 0;
+        } else {
+          iid = idC2
+        }
+        iid++;
+        this.list2.push({
+          name: "Task " + iid,
+          id: iid,
+          text: ""
+        });
+      },
+      removeAt3(idx) {
+        this.list3.splice(idx, 1);
+      },
+      add3: function () {
+        var idC1 = this.list3;
+        var idC2 = Math.max.apply(Math, this.list3.map(function (o) {
+          return o.id;
+        }))
+        console.log(idC1);
+        console.log(idC2);
+        var iid;
+        if (this.list3.length <= 0) {
+          iid = 0;
+        } else {
+          iid = idC2
+        }
+        iid++;
+        this.list3.push({
+          name: "Task " + iid,
+          id: iid,
+          text: ""
+        });
+      },
+      removeAt4(idx) {
+        this.list4.splice(idx, 1);
+      },
+      add4: function () {
+        var idC1 = this.list4;
+        var idC2 = Math.max.apply(Math, this.list4.map(function (o) {
+          return o.id;
+        }))
+        console.log(idC1);
+        console.log(idC2);
+        var iid;
+        if (this.list4.length <= 0) {
+          iid = 0;
+        } else {
+          iid = idC2
+        }
+        iid++;
+        this.list4.push({
+          name: "Task " + iid,
+          id: iid,
+          text: ""
+        });
+      },
+      removeAt5(idx) {
+        this.list5.splice(idx, 1);
+      },
+      add5: function () {
+        var idC1 = this.list5;
+        var idC2 = Math.max.apply(Math, this.list5.map(function (o) {
+          return o.id;
+        }))
+        console.log(idC1);
+        console.log(idC2);
+        var iid;
+        if (this.list5.length <= 0) {
+          iid = 0;
+        } else {
+          iid = idC2
+        }
+        iid++;
+        this.list5.push({
+          name: "Task " + iid,
+          id: iid,
+          text: ""
+        });
+      },
+      removeAt6(idx) {
+        this.list6.splice(idx, 1);
+      },
+      add6: function () {
+        var idC1 = this.list6;
+        var idC2 = Math.max.apply(Math, this.list6.map(function (o) {
+          return o.id;
+        }))
+        console.log(idC1);
+        console.log(idC2);
+        var iid;
+        if (this.list6.length <= 0) {
+          iid = 0;
+        } else {
+          iid = idC2
+        }
+        iid++;
+        this.list6.push({
+          name: "Task " + iid,
+          id: iid,
+          text: ""
+        });
+      }
+    }
+  };
 
 </script>
-
-<style>
-  h1 {
-    color: rgb(243, 35, 35);
-    font-family: 'Times New Roman', Times, serif;
-    font-style: inherit
+<style scoped>
+  .button {
+    display: block;
+    /* margin: 10px 0;
+    padding: 10px; */
+    width: 100%;
   }
 
-  h2 {
-    color: black
+  .handle {
+    float: left;
+    padding-top: 8px;
+    padding-bottom: 8px;
+  }
+
+  .close {
+    float: right;
+    padding-top: 8px;
+    padding-bottom: 8px;
+  }
+
+  input {
+    display: inline-block;
+    width: 50%;
+  }
+
+  .text {
+    margin: 20px;
   }
 
 </style>

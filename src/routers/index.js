@@ -3,14 +3,14 @@ import Router from 'vue-router'
 
 const DefaultContainer = () => import('@/containers/DefaultContainer')
 const Dashboard = () => import('@/views/Dashboard')
-const Companys = () => import('@/views/company/Companys')
-const CompanyRegister = () => import('@/views/company/Register')
+
 const Requirements = () => import('@/views/project/Requirements')
 const CreateProject = () => import('@/views/project/AddRequirements')
 const Login = () => import('@/views/pages/Login')
 const Register = () => import('@/views/pages/Register')
 const Users = () => import('@/views/users/Users')
 const User = () => import('@/views/users/User')
+const Userstories = () => import('@/views/project/Userstories')
 const Charts = () => import('@/views/project/Charts')
 
 Vue.use(Router)
@@ -52,28 +52,7 @@ export default new Router({
             },
           ]
         },
-        {
-          path: 'company',
-          redirect: '/company/cards',
-          name: 'Company',
-          component: {
-            render (c) { 
-              return c('router-view') 
-            }
-          },
-          children: [
-            {
-              path: 'Companys',
-              name: "Company's",
-              component: Companys
-            },
-            {
-              path: 'Register',
-              name: 'Register',
-              component: CompanyRegister
-            }
-          ]
-        },
+             
         {
           path: 'project',
           redirect: '/project/Requirements',
@@ -90,19 +69,25 @@ export default new Router({
               component: Requirements
             },
             {
-              path: 'charts',
-              name: 'Charts',
-              component: Charts
+              path: 'UserStories',
+              name: 'UserStories',
+              component: Userstories
             },
             {
               path: 'AddRequirements',
               name: 'Add Requirements',
               component: CreateProject
             },
+            {
+              path: 'charts',
+              name: 'charts',
+              component: Charts
+            },
           ]
         }
       ]
     }, 
+      
     {
       path: '/pages',
       redirect: '/pages/login',

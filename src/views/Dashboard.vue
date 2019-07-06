@@ -68,7 +68,7 @@
 
 <div>
   <b-card
-    title="No of User Stories Entered"
+    title="User Stories Entered"
     img-src="https://mir-s3-cdn-cf.behance.net/project_modules/disp/91baf878758501.5cae1b70c1243.jpg" 
     
     img-alt="Image"
@@ -113,7 +113,7 @@
 
 <div>
   <b-card
-    title="Newly Entered User Stories"
+    title="New User Stories"
     img-src="https://mir-s3-cdn-cf.behance.net/project_modules/disp/96413778758501.5cae1b70c0b1c.jpg" 
     img-alt="Image" 
     img-top

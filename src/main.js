@@ -6,9 +6,11 @@ import BootstrapVue from 'bootstrap-vue'
 import App from './App'
 import router from './routers'
 import VueParticles from 'vue-particles'
+// import Chart from 'chart.js'
 import 'bootstrap-css-only/css/bootstrap.min.css'
 import 'mdbvue/build/css/mdb.css'
 import './plugins/element.js'
+
 Vue.use(VueParticles)
 Vue.use(BootstrapVue)
 /* eslint-disable */

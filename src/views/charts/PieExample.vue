@@ -5,12 +5,12 @@ export default {
   extends: Pie,
   mounted () {
     this.renderChart({
-      labels: ['VueJs', 'EmberJs', 'ReactJs', 'AngularJs'],
+       labels: ['No of User Stories Entered', 'Recent User Stories', 'Total user Stories', 'Newly Entered User Stories'],
       datasets: [
         {
-          backgroundColor: [
-            '#41B883',
-            '#E46651',
+         backgroundColor: [
+            '#64DD17',
+            '#795548',
             '#00D8FF',
             '#DD1B16'
           ],

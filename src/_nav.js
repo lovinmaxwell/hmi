@@ -9,33 +9,15 @@ export default {
       }
     },
     {
-      name: 'Company',
-      url: '/company',
-      icon: 'icon-menu',
-      children: [
-        {
-          name: "Company's",
-          url: '/company/companys',
-          icon: 'icon-puzzle'
-        },
-        {
-          name: 'Register',
-          url: '/company/Register',
-          icon: 'icon-puzzle'
-        }
-      ]
-    },    
-    
-    {
       name: 'Project',
       url: '/project',
       icon: 'icon-menu',
       children: [
-        {
-          name: 'Requirements',
-          url: '/project/Requirements',
-          icon: 'icon-cursor'
-        },
+        // {
+        //   name: 'Requirements',
+        //   url: '/project/Requirements',
+        //   icon: 'icon-cursor'
+        // },
         {
           name: 'Add Requirements',
           url: '/project/AddRequirements',
@@ -43,10 +25,14 @@ export default {
         },
         {
           name: 'User Stories',
-          url: '/project/charts',
+          url: '/project/UserStories',
           icon: 'icon-map'
         },
-    
+        {
+          name: 'Charts',
+          url: '/project/Charts',
+          icon: 'icon-map'
+        },
       ]
     }
   ]
